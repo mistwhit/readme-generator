@@ -9,7 +9,12 @@ ${title}
 ${description}
 
 # Table of Contents
-(Things Will Go Here)
+- [Installation]()
+- [Usage]()
+- [License]()
+- [Contributing]()
+- [Tests]()
+- [Questions]()
 
 # Installation
 ${installation}
