@@ -1,7 +1,8 @@
+[![License: MIT](https://img.shields.io/github/license/<mistwhit>/<readme-generator>)]
 # readme-generator
 
 ## Description
-I created a command line program that generates a README based on the answers to a few simple questions.
+I created a simple command line programe using Node.js that generates a professional README based on the answers to a few simple questions.
 
 ## Table of Contents
 - [Installation](https://github.com/mistwhit/readme-generator#installation)
@@ -12,19 +13,20 @@ I created a command line program that generates a README based on the answers to
 - [Questions](https://github.com/mistwhit/readme-generator#questions)
 
 ## Installation
-Before cloning, make sure you have a package.json installed as well as Inquirer. 
+```npm init``` ```npm install inquirer```
 
 ## Usage
-To use, simply call ```node index.js``` in your terminal and follow the prompts.
+To use, simply call ```node index.js``` at the root of your project and then follow the prompts.
 
 ## License
 MIT
 
+
 ## Contributing
-Please create a new branch with any contributions. All branches will be considered for merging with the final product. 
+Please create a new branch with any contributions. All branches will be considered for merging with the README generator.
 
 ## Tests
-See usage and installation instructions for details on how to test this project.
+
 
 ## Questions
 You can find me at www.github.com/mistwhit. Feel free to email me at mistywhitenton@gmail.com if you have any questions.

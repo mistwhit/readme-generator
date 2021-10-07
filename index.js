@@ -2,7 +2,8 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 const generateReadme = ({ title, description, installation, usage, license, contributing, tests, github, email }) =>
-  `# ${title}
+  `[![License: ${license}](https://img.shields.io/github/license/<${github}>/<${title}>)]
+# ${title}
 
 ## Description
 ${description}
@@ -23,6 +24,7 @@ ${usage}
 
 ## License
 ${license}
+
 
 ## Contributing
 ${contributing}
