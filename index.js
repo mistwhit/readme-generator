@@ -2,38 +2,36 @@ const inquirer = require('inquirer');
 const fs = require('fs');
 
 const generateReadme = ({ title, description, installation, usage, license, contributing, tests, github, email }) =>
-  `# Title
-${title}
+  `# ${title}
 
-# Description
+## Description
 ${description}
 
-# Table of Contents
-- [Installation]()
-- [Usage]()
-- [License]()
-- [Contributing]()
-- [Tests]()
-- [Questions]()
+## Table of Contents
+- [Installation](https://github.com/${github}/${title}#installation)
+- [Usage](https://github.com/${github}/${title}#usage)
+- [License](https://github.com/${github}/${title}#license)
+- [Contributing](https://github.com/${github}/${title}#contributing)
+- [Tests](https://github.com/${github}/${title}#tests)
+- [Questions](https://github.com/${github}/${title}#questions)
 
-# Installation
+## Installation
 ${installation}
 
-# Usage
+## Usage
 ${usage}
 
-# License
+## License
 ${license}
 
-# Contributing
+## Contributing
 ${contributing}
 
-# Tests
+## Tests
 ${tests}
 
-# Questions
-${github}
-${email}`;
+## Questions
+You can find me at www.github.com/${github}. Feel free to email me at ${email} if you have any questions.`;
 
 inquirer
   .prompt([
