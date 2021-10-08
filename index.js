@@ -1,20 +1,20 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
-const generateReadme = ({ title, description, installation, usage, license, contributing, tests, github, email }) =>
-  `[![License: ${license}](https://img.shields.io/github/license/<${github}>/<${title}>)]
+const generateReadme = ({ title, githubRepo, description, installation, usage, license, contributing, tests, github, email }) =>
+  `![License: ${license}](https://img.shields.io/github/license/${github}/${githubRepo})
 # ${title}
 
 ## Description
 ${description}
 
 ## Table of Contents
-- [Installation](https://github.com/${github}/${title}#installation)
-- [Usage](https://github.com/${github}/${title}#usage)
-- [License](https://github.com/${github}/${title}#license)
-- [Contributing](https://github.com/${github}/${title}#contributing)
-- [Tests](https://github.com/${github}/${title}#tests)
-- [Questions](https://github.com/${github}/${title}#questions)
+- [Installation](https://github.com/${github}/${githubRepo}#installation)
+- [Usage](https://github.com/${github}/${githubRepo}#usage)
+- [License](https://github.com/${github}/${githubRepo}#license)
+- [Contributing](https://github.com/${github}/${githubRepo}#contributing)
+- [Tests](https://github.com/${github}/${githubRepo}#tests)
+- [Questions](https://github.com/${github}/${githubRepo}#questions)
 
 ## Installation
 ${installation}
@@ -24,7 +24,6 @@ ${usage}
 
 ## License
 ${license}
-
 
 ## Contributing
 ${contributing}
@@ -41,6 +40,11 @@ inquirer
       type: 'input',
       name: 'title',
       message: 'What is the title of your project?',
+    },
+    {
+      type: 'input',
+      name: 'githubRepo',
+      message: 'What is the name of your GitHub repository? Include dashes!',
     },
     {
       type: 'input',
