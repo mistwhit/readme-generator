@@ -23,7 +23,7 @@ ${installation}
 ${usage}
 
 ## License
-${license}
+Licensed under the ${license} license.
 
 ## Contributing
 ${contributing}
